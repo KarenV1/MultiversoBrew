@@ -67,14 +67,17 @@ body {
     display: flex;
     align-items: center;
 }
+
 .navbar-left {
     justify-content: flex-start;
     flex: 1;
 }
+
 .navbar-right {
     justify-content: flex-end;
     flex: 1;
 }
+
 .menu-toggle {
     display: none !important;
 }
@@ -83,13 +86,16 @@ body {
     justify-content: center;
     flex: 1;
 }
+
 .navbar-right {
     justify-content: flex-end;
     flex: 1;
 }
+
 .navbar-center .logo {
     margin: 0 auto;
 }
+
 .navbar-section ul.menu-list {
     display: flex;
     gap: 30px;
@@ -390,6 +396,8 @@ body {
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.6));
     transition: transform 0.3s ease;
     background: transparent;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .card-front img:hover {
@@ -725,16 +733,19 @@ footer p {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-        .navbar {
-            padding: 10px 10px;
-        }
-        .navbar-section ul.menu-list {
-            gap: 18px;
-        }
-        .navbar-center .logo img {
-            height: 48px;
-            width: 48px;
-        }
+    .navbar {
+        padding: 10px 10px;
+    }
+
+    .navbar-section ul.menu-list {
+        gap: 18px;
+    }
+
+    .navbar-center .logo img {
+        height: 48px;
+        width: 48px;
+    }
+
     .hero h1 {
         font-size: 40px;
     }
@@ -786,11 +797,11 @@ footer p {
     .navbar {
         padding: 8px 4px;
     }
-    
+
     .navbar-section ul.menu-list {
         gap: 10px;
     }
-    
+
     .navbar-center .logo img {
         height: 38px;
         width: 38px;
