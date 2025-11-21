@@ -783,17 +783,18 @@ footer p {
 }
 
 @media (max-width: 600px) {
+        .navbar {
+            padding: 8px 4px;
+        }
+        .navbar-section ul.menu-list {
+            gap: 10px;
+        }
+        .navbar-center .logo img {
+            height: 38px;
+            width: 38px;
+        }
     .navbar {
-        padding: 8px 4px;
-    }
-    
-    .navbar-section ul.menu-list {
-        gap: 10px;
-    }
-    
-    .navbar-center .logo img {
-        height: 38px;
-        width: 38px;
+        padding: 10px 20px;
     }
 
     .navbar ul {
@@ -814,23 +815,19 @@ footer p {
     }
 
     .carousel-container {
-        padding: 40px 16px 16px;
+        padding: 100px 16px 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        overflow: visible;
     }
 
     .carousel {
         display: flex;
         gap: 14px;
-        padding: 60px 8px 14px 8px;
+        padding: 0 0 14px;
         overflow-x: auto;
-        overflow-y: visible;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        scroll-behavior: smooth;
         justify-content: flex-start;
         width: 100%;
         max-width: 100%;
@@ -841,14 +838,9 @@ footer p {
         flex: 0 0 210px;
         width: 210px;
         height: 210px;
-        margin: 0;
+        margin: 0 auto;
         position: relative;
         scroll-snap-align: center;
-        overflow: visible;
-    }
-
-    .card-inner {
-        overflow: visible;
     }
 
     .card-front img {
@@ -861,8 +853,20 @@ footer p {
         z-index: 2;
         object-fit: contain;
         background: transparent;
-        filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
+        box-shadow: 0 8px 24px rgba(0,0,0,0);
     }
+    .card {
+        flex: 0 0 210px;
+        width: 210px;
+        height: 210px;
+        margin: 0 auto;
+        position: relative;
+        scroll-snap-align: center;
+        
+    .card-inner {
+        
+    .carousel {
+        
 
     .card-front h3 {
         margin-top: 90px;

@@ -99,6 +99,24 @@ document.addEventListener('DOMContentLoaded', function () {
             window.requestAnimationFrame(updateActiveDot);
         });
 
+        // Permitir deslizamiento táctil en móviles
+        let isTouching = false;
+        let startX = 0;
+        let scrollStart = 0;
+        carousel.addEventListener('touchstart', function(e) {
+            isTouching = true;
+            startX = e.touches[0].clientX;
+            scrollStart = carousel.scrollLeft;
+        });
+        carousel.addEventListener('touchmove', function(e) {
+            if (!isTouching) return;
+            const dx = startX - e.touches[0].clientX;
+            carousel.scrollLeft = scrollStart + dx;
+        });
+        carousel.addEventListener('touchend', function() {
+            isTouching = false;
+        });
+
         // Navegación con puntos
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
