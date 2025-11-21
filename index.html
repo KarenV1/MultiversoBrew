@@ -1,395 +1,416 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Multiverso Brew - Un café de otro universo</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiverso Brew - Cafetería Temática</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-<nav class="navbar">
-  <a href="#inicio" class="logo">
-    <img src="imagenes/logosimp.png" alt="Logo Multiverso Brew">
-    
-  </a>
-  <ul>
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#menu">Menú</a></li>
-    <li><a href="#reseñas">Reseñas</a></li>
-    <li><a href="#contacto">Contáctanos</a></li>
-  </ul>
-</nav>
-
-
-
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="container hero-inner">
-      <h1>Multiverso Brew</h1>
-      <p>Explora el sabor de cada universo con nuestras bebidas y platillos inspirados en tus héroes favoritos.</p>
-      <a href="#menu" class="btn-primary">Ver Menú</a>
-    </div>
-  </section>
-
-  <!-- MENÚ -->
-  <section id="menu" class="menu">
-    <div class="container">
-      <!-- ALIMENTOS SALADOS -->
-      <section class="menu-section">
-        <h2>🥪 ALIMENTOS SALADOS</h2>
-
-        <div class="carousel-container">
-          <div class="carousel">
-            <!-- GuacaThor -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/pan tostado.png" alt="GuacaThor">
-                  <h3>GUACATHOR</h3>
-                  <p>$70 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Pan tostado con rebanadas de aguacate y un ligero toque de limón. Sabor intenso y textura suave con energía total en cada bocado.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Profesor X-Queso -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/Sandwich.png" alt="Profesor X-Queso">
-                  <h3>PROFESOR X-QUESO</h3>
-                  <p>$70 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Pan suave con jamón, queso fundido, lechuga fresca y rebanadas de aguacate. Aderezo de la casa con un toque cremoso y especiado que realza el sabor.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Croissant América -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/cuernito.png" alt="Croissant América">
-                  <h3>CROISSANT AMÉRICA</h3>
-                  <p>$70 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Cuernito dorado y crujiente, relleno con jamón, queso derretido y rebanadas de aguacate fresco.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Iron Chapata -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/chapata.png" alt="Iron Chapata">
-                  <h3>IRON CHAPATA</h3>
-                  <p>$75 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Chapata tostada con pollo, queso derretido y chipotle. También disponible en versión salami con pesto. Intensa, sabrosa y con un toque ligeramente picante.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dots" aria-hidden="false"></div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul class="menu-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#menu">Menú</a></li>
+            </ul>
         </div>
-      </section>
-
-      <!-- ALIMENTOS DULCES -->
-      <section class="menu-section">
-        <h2>🍰 ALIMENTOS DULCES</h2>
-
-        <div class="carousel-container">
-          <div class="carousel">
-            <!-- WonderBite -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/wonderbite.png" alt="WonderBite">
-                  <h3>WONDERBITE</h3>
-                  <p>$80 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Cheesecake de limón con base de galleta Oreo dorada y topping de frambuesa natural con brillo dorado comestible. Decorado con escudo de chocolate blanco.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- SpiderSlice -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/spiderslice.png" alt="SpiderSlice">
-                  <h3>SPIDERSLICE</h3>
-                  <p>$80 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Cheesecake de frambuesa con centro líquido de limón. Topping de telaraña de chocolate oscuro y crema de Oreo con mini ojos de azúcar inspirados en Spidey.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- ColorBlast -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/colorblast.png" alt="ColorBlast">
-                  <h3>COLORBLAST</h3>
-                  <p>$85 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Cheesecake de tres capas de mousse (frambuesa, limón y vainilla) con toppings de colores tipo confeti y glaseado brillante. Explosión visual y de sabor.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Brownie Mutante -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/brownie-mutante.png" alt="Brownie Mutante">
-                  <h3>BROWNIE MUTANTE</h3>
-                  <p>$65 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Brownie con centro de menta. Capa exterior de cacao intenso y corazón verde vibrante. Doble identidad deliciosa: dulce y fresca.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dots" aria-hidden="false"></div>
+        <a href="#inicio" class="logo">
+            <img src="./imagenes/logo.png" alt="Logo Multiverso Brew">
+        </a>
+        <div class="navbar-right">
+            <a href="#contacto" class="btn-contact">Contáctanos</a>
         </div>
-      </section>
+    </nav>
 
-      <!-- BEBIDAS CALIENTES -->
-      <section class="menu-section">
-        <h2>☕ BEBIDAS CALIENTES</h2>
-
-        <div class="carousel-container">
-          <div class="carousel">
-            <!-- Hero Caramell -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/hero-caramell.png" alt="Hero Caramell">
-                  <h3>HERO CARAMELL</h3>
-                  <p>$65 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Doble espresso con leche espumosa y jarabe de caramelo. Suave, cremoso y con un toque de cacao espolvoreado al final.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Escudo Dorado -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/escudo-dorado.png" alt="Escudo Dorado">
-                  <h3>ESCUDO DORADO</h3>
-                  <p>$60 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Espresso con leche al vapor y espuma cremosa. Ligero, equilibrado y con sabor suave que acompaña cualquier momento.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Kripton Matcha -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/kripton-matcha.png" alt="Kripton Matcha">
-                  <h3>KRIPTON MATCHA</h3>
-                  <p>$70 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Té matcha japonés mezclado con leche al gusto y espuma ligera. Cremoso, vibrante y lleno de energía natural.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Fuerza Cósmica -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/fuerza-cosmica.png" alt="Fuerza Cósmica">
-                  <h3>FUERZA CÓSMICA</h3>
-                  <p>$70 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
-                </div>
-                <div class="card-back">
-                  <p>Mezcla de té negro con especias chai, leche al gusto y endulzante. Aromático y cálido, con sabor especiado que recarga el poder.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dots" aria-hidden="false"></div>
+    <!-- HERO -->
+    <header id="inicio" class="hero">
+        <div class="hero-inner">
+            <h1>¡Un café de otro universo!</h1>
+            <p>Donde cada sorbo es una nueva historia y cada bocado una aventura épica.</p>
+            <a href="#menu" class="btn-primary">VER MENÚ</a>
         </div>
-      </section>
+    </header>
 
-      <!-- BEBIDAS FRÍAS -->
-      <section class="menu-section">
-        <h2>🧃 BEBIDAS FRÍAS</h2>
+    <!-- MENÚ -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <!-- ALIMENTOS SALADOS -->
+            <section class="menu-section">
+                <h2>ALIMENTOS SALADOS</h2>
+                <div class="carousel-container">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel">
+                        <!-- GuacaThor -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/guacathor.png" alt="GuacaThor">
+                                    <h3>GUACATHOR</h3>
+                                    <p>$70 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Pan tostado con rebanadas de aguacate y un ligero toque de limón. Sabor intenso y
+                                        textura suave con
+                                        energía total en cada bocado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Profesor X-Queso -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/sanwichpollo.png" alt="Profesor X-Queso">
+                                    <h3>PROFESOR X-QUESO</h3>
+                                    <p>$70 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Pan suave con jamón, queso fundido, lechuga fresca y rebanadas de aguacate.
+                                        Aderezo de la casa con
+                                        un toque cremoso y especiado que realza el sabor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Croissant América -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/cuernito.png" alt="Croissant América">
+                                    <h3>CROISSANT AMÉRICA</h3>
+                                    <p>$70 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Cuernito dorado y crujiente, relleno con jamón, queso derretido y rebanadas de
+                                        aguacate fresco.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots" aria-hidden="false"></div>
+                    <button class="carousel-next">❯</button>
+                </div>
+            </section>
 
-        <div class="carousel-container">
-          <div class="carousel">
-            <!-- Krypton Shake -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/krypton-shake.png" alt="Krypton Shake">
-                  <h3>KRYPTON SHAKE</h3>
-                  <p>$85 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
+            <!-- ALIMENTOS DULCES -->
+            <section class="menu-section">
+                <h2>ALIMENTOS DULCES</h2>
+                <div class="carousel-container">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel">
+                        <!-- WonderBite -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/wonderbite.png" alt="WonderBite">
+                                    <h3>WONDERBITE</h3>
+                                    <p>$80 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Cheesecake de limón con base de galleta Oreo dorada y topping de frambuesa
+                                        natural con brillo
+                                        dorado comestible. Decorado con escudo de chocolate blanco.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SpiderSlice -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/cupcake.png" alt="SpiderSlice">
+                                    <h3>SPIDERSLICE</h3>
+                                    <p>$80 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>¡POP! Cupcake de vainilla esponjoso con betún en degradé pastel que abre la
+                                        historia. Cada bocado
+                                        es la primera viñeta: suave, cálido y reconfortante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- El Caballero de la Noche Crujiente -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/cupcake dark.png" alt="El Caballero de la Noche Crujiente">
+                                    <h3>EL CABALLERO DE LA NOCHE CRUJIENTE</h3>
+                                    <p>$85 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Galleta de chocolate oscuro con glaseado negro profundo y el emblemático logo de
+                                        Batman en amarillo
+                                        brillante en el centro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots" aria-hidden="false"></div>
+                    <button class="carousel-next">❯</button>
                 </div>
-                <div class="card-back">
-                  <p>Malteada de vainilla con espirulina, leche y helado de vainilla. Cremosa, fresca y con un color verde brillante que aporta energía heroica.</p>
-                </div>
-              </div>
-            </div>
+            </section>
 
-            <!-- Mr. Freeze -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/mr-freeze.png" alt="Mr. Freeze">
-                  <h3>MR. FREEZE</h3>
-                  <p>$70 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
+            <!-- BEBIDAS CALIENTES -->
+            <section class="menu-section">
+                <h2>BEBIDAS CALIENTES</h2>
+                <div class="carousel-container">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel">
+                        <!-- Hero Caramell -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/CAPUCCINO.png" alt="Hero Caramell">
+                                    <h3>HERO CARAMELL</h3>
+                                    <p>$65 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Doble espresso con leche espumosa y jarabe de caramelo. Suave, cremoso y con un
+                                        toque de cacao
+                                        espolvoreado al final.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Escudo Dorado -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/LATTE (1).png" alt="Escudo Dorado">
+                                    <h3>ESCUDO DORADO</h3>
+                                    <p>$60 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Espresso con leche al vapor y espuma cremosa. Ligero, equilibrado y con sabor
+                                        suave que acompaña
+                                        cualquier momento.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kripton Matcha -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/MATCHA.png" alt="Kripton Matcha">
+                                    <h3>KRIPTON MATCHA</h3>
+                                    <p>$70 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Té matcha japonés mezclado con leche al gusto y espuma ligera. Cremoso, vibrante
+                                        y lleno de energía
+                                        natural.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots" aria-hidden="false"></div>
+                    <button class="carousel-next">❯</button>
                 </div>
-                <div class="card-back">
-                  <p>Café espresso frío con hielo, leche al gusto (entera, descremada o vegetal) y un toque de endulzante. Refrescante y cremoso.</p>
-                </div>
-              </div>
-            </div>
+            </section>
 
-            <!-- Wanda Berry -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/wanda-berry.png" alt="Wanda Berry">
-                  <h3>WANDA BERRY</h3>
-                  <p>$65 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
+            <!-- BEBIDAS FRÍAS -->
+            <section class="menu-section">
+                <h2>BEBIDAS FRÍAS</h2>
+                <div class="carousel-container">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel">
+                        <!-- Krypton Shake -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/espirulina.png" alt="Krypton Shake">
+                                    <h3>KRYPTON SHAKE</h3>
+                                    <p>$85 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Malteada de vainilla con espirulina, leche y helado de vainilla. Cremosa, fresca
+                                        y con un color
+                                        verde brillante que aporta energía heroica.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mr. Freeze -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/FRAPPE.png" alt="Mr. Freeze">
+                                    <h3>MR. FREEZE</h3>
+                                    <p>$70 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Café espresso frío con hielo, leche al gusto (entera, descremada o vegetal) y un
+                                        toque de
+                                        endulzante. Refrescante y cremoso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cosmic Soda -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/SOD BLUEBERRY (1).png" alt="Cosmic Soda">
+                                    <h3>COSMIC SODA</h3>
+                                    <p>$65 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Soda italiana con jarabe de blueberry y hielo. Refrescante, ligeramente ácida y
+                                        con un color azul
+                                        intenso que parece salido de otra galaxia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots" aria-hidden="false"></div>
+                    <button class="carousel-next">❯</button>
                 </div>
-                <div class="card-back">
-                  <p>Infusión fría de fresa, frambuesa y arándano. Dulce, ligera y con un color vibrante que encanta a primera vista.</p>
-                </div>
-              </div>
-            </div>
+            </section>
 
-            <!-- Green Lantern -->
-            <div class="card">
-              <div class="card-inner">
-                <div class="card-front">
-                  <img src="imagenes/green-lantern.png" alt="Green Lantern">
-                  <h3>GREEN LANTERN</h3>
-                  <p>$60 MXN</p>
-                  <button class="btn-flip">VER DESCRIPCIÓN</button>
+            <!-- MERCANCÍA -->
+            <section class="menu-section">
+                <h2>MERCANCÍA</h2>
+                <div class="carousel-container">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel">
+                        <!-- Playera -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/PLAYERA MULTIVERSO.jpeg" alt="Playera Multiverso">
+                                    <h3>PLAYERA MULTIVERSO</h3>
+                                    <p>$299 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Playera blanca con el distintivo logo de Multiverso Brew. Diseño limpio, cómodo y
+                                        perfecto para
+                                        fans que quieren llevar el multiverso a todas partes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Stiker -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/STICKER 1.jpeg" alt="Stiker Multiverso">
+                                    <h3>STIKER MULTIVERSO</h3>
+                                    <p>$70 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Sticker del logo oficial de Multiverso Brew, ideal para personalizar laptops,
+                                        termos o libretas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Taza -->
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="imagenes/TASA MULTIVERSO.jpeg" alt="Taza Multiverso">
+                                    <h3>TAZA MULTIVERSO</h3>
+                                    <p>$150 MXN</p>
+                                    <button class="btn-flip">VER DESCRIPCIÓN</button>
+                                </div>
+                                <div class="card-back">
+                                    <p>Taza blanca con el logo oficial de Multiverso Brew. Ideal para disfrutar tu café
+                                        mientras llevas
+                                        contigo el espíritu del multiverso.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots" aria-hidden="false"></div>
+                    <button class="carousel-next">❯</button>
                 </div>
-                <div class="card-back">
-                  <p>Té de limón natural con rodajas frescas y un toque de endulzante opcional. Refrescante y lleno de energía cítrica.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dots" aria-hidden="false"></div>
+            </section>
         </div>
-      </section>
+    </section>
 
-    </div> <!-- container -->
-  </section>
-
-  <!-- RESEÑAS -->
-  <section id="reseñas" class="reseñas">
-    <div class="container">
-      <h2>⭐ Reseñas de Nuestros Héroes</h2>
-      <div class="reseña">
-        <div class="estrellas">⭐⭐⭐⭐⭐</div>
-        <p>"¡El mejor café de la galaxia! El Panini del Capitán América es mi favorito."</p>
-        <span>- Tony Stark (Fan #1)</span>
-      </div>
-
-      <div class="reseña">
-        <div class="estrellas">⭐⭐⭐⭐</div>
-        <p>"El Frappe de Black Panther es una delicia. ¡Muy recomendado!"</p>
-        <span>- Natasha Romanoff (Fan #2)</span>
-      </div>
-
-      <div class="dejar-reseña">
-        <h3>Deja tu reseña</h3>
-        <form>
-          <input type="text" placeholder="Tu nombre" required>
-          <select required>
-            <option value="">Calificación</option>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="1">⭐</option>
-          </select>
-          <textarea placeholder="Tu comentario" required></textarea>
-          <button type="submit" class="btn">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="contacto">
-    <div class="container">
-      <h2>📞 Contáctanos</h2>
-      <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <textarea placeholder="Mensaje" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-
-      <div class="info-contacto">
-        <p>📍 Dirección: Av. Insurgentes 123, Ciudad de México</p>
-        <p>📧 Email: contacto@multiversobrew.mx</p>
-        <div class="redes">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+    <!-- RESEÑAS -->
+    <section id="reseñas" class="reseñas">
+        <div class="container">
+            <h2>⭐ Reseñas de Nuestros Héroes</h2>
+            <div class="reseña">
+                <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                <p>"¡El mejor café de la galaxia! El GuacaThor es mi favorito."</p>
+                <span>- Tony Stark (Fan #1)</span>
+            </div>
+            <div class="reseña">
+                <div class="estrellas">⭐⭐⭐⭐</div>
+                <p>"El Krypton Shake es una delicia. ¡Muy recomendado para recargar energía!"</p>
+                <span>- Natasha Romanoff (Fan #2)</span>
+            </div>
+            <div class="dejar-reseña">
+                <h3>Deja tu reseña</h3>
+                <form>
+                    <input type="text" placeholder="Tu nombre" required>
+                    <select required>
+                        <option value="">Calificación</option>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="1">⭐</option>
+                    </select>
+                    <textarea placeholder="Tu comentario" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Multiverso Brew. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>📞 Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <div class="info-contacto">
+                <p>📍 Dirección: Av. Insurgentes 123, Ciudad de México</p>
+                <p>📧 Email: contacto@multiversobrew.mx</p>
+                <div class="redes">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Multiverso Brew. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Librerías -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
